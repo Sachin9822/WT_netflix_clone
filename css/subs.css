@@ -1,0 +1,98 @@
+body {
+  color: black;
+  font-family: sans-serif;
+  }
+img {
+  height: 45px;
+  padding: 20px;
+}
+.nfHeader {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  height: 90px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+.simpleContainer{
+  padding: 0 50px;
+}
+.checkmark-group{
+  list-style-type: none;
+}
+.centerContainer{
+  display: flex;
+  width: 60vw;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.loginbtn {
+  display: none;
+}
+small {
+  display: flex;
+  margin-left: 10px;
+}
+.plainGrid_header{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  margin: 0;
+  margin-left: 85px;
+}
+.plainGrid_box{
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  border: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #E50914;
+  filter: brightness(1.98)
+}
+table{
+  text-indent: initial;
+  margin-bottom: 30px;
+}
+.plainGrid_table_title{
+  display: flex;
+  width: 250px;
+  height: 100px;
+  margin-top: 30px;
+  align-items: center;
+  margin-left: 12px;
+}
+.plainGrid_table_value{
+  width: 138px;
+  margin: 30px 0;
+}
+.plainGrid_table th, .plainGrid_table td{
+border-bottom: 1px solid lightgrey; 
+  
+}
+.submitBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.submitBtn {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  width: 400px;
+  height: 60px;
+}
