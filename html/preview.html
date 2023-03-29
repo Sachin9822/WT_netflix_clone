@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview</title>
+</head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        background-color: black;
+    }
+ .container1{
+    
+  width: 100%;
+  height: 1000px;
+  background-image: url('backG.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+ 
+
+} 
+.container2{
+  /* background-color: red; */
+  padding: 40px;
+  text-align: left;
+  width: 20%;
+  height: 500px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: x-large;
+  font: cursive;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  
+  opacity: .75;
+  /* border: 3px solid green; */
+}
+
+.button {
+  border-radius: 4px;
+  background-color: rgb(255, 0, 0);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.tb1{
+    width: 300px; height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.tb2{
+    width: 300px; height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#C{
+    font-size: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 2 1 auto;
+  
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 600px;
+  height: 400px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container1 > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+.fotu-1 {
+   flex-grow: 1;
+}
+.fotu-2 {
+   flex-grow: 4;
+}
+
+.flex-containerArvind > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-containerArvind {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(255, 255, 255);
+}
+</style>
+<body>
+
+<div class="container1">
+    <img src="netflixLogo.png"  width="350" 
+    height="200" alt="">
+    <div class="flex-container">
+        <div class="fotu fotu-1" >1</div>
+        <div class="fotu fotu-2">2</div>
+        
+      </div>
+
+      <div class="container3">
+        <br>
+<br>
+<br>
+<br>
+        <h2 >Trending Now</h2>
+    <div class="flex-containerArvind">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+       
+      </div>
+    </div>
+
+     
+
+   
+</div>
+
+
+
+    
+</body>
+</html>
