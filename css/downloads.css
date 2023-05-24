@@ -4,32 +4,32 @@ body {
   font-family: sans-serif;
 }
 img {
-  height: 30px;
+  height: 3990px;
 }
-.nfHeader{
+.nfHeader {
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
 }
-.nfHeader_left{
+.nfHeader_left {
   padding: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nfHeader_left{
+.nfHeader_left {
   padding: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nfHeader_left img{
+.nfHeader_left img {
   margin-right: 20px;
 }
 .nfHeader_left p {
   margin: 0 20px;
 }
-.nfBody{
+.nfBody {
   padding: 10px 50px;
 }
 .content {
@@ -37,10 +37,9 @@ img {
   width: auto;
   transition: transform 0.2s;
 }
-.content:hover{
+.content:hover {
   transform: scale(1.1);
   z-index: 1;
-    
 }
 .mainContainer {
   width: 90vw;
@@ -49,9 +48,9 @@ img {
   flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
-  z-index: -1; 
+  z-index: -1;
 }
-.container img{
+.container img {
   margin: 0.5em;
   height: 160px;
   width: 250px;
@@ -62,15 +61,13 @@ img {
   display: flex;
   justify-content: space-evenly;
   margin: 10px 20px;
-
 }
-.container_info{
-  
+.container_info {
   margin-right: 10px;
   width: 60vw;
   overflow-wrap: normal;
 }
-.container_size{
+.container_size {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,7 +83,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-.social-links svg{
+.social-links svg {
   margin: 20px 30px;
   color: white;
 }

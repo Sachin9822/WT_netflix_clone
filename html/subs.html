@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Netflix clone</title>
+    <title>Netflix clone</title>'
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/subs.css" rel="stylesheet">
+    <script>
+      $(document).ready(function(){
+        $('.coupon_button').click(function(){
+          if($("#coupon_value").val()=="Sachin69"){
+            let mobile = $('.mobile').html().trim(); 
+          mobile = mobile.split(' ')
+          console.log(mobile);
+          mobile = parseInt(mobile);
+          let final_price = (mobile-mobile*0.2).toString()
+          final_price+="Rs"
+          $('.mobile').html(final_price)
+
+          let basic = $('.basic').html(); 
+          basic = parseInt(basic);
+          final_price = (basic-basic*0.2).toString()
+          final_price+="Rs"
+          $('.basic').html(final_price)
+
+          let standard = $('.standard').html(); 
+          standard = parseInt(standard);
+          final_price = (standard-standard*0.2).toString()
+          final_price+="Rs"
+          $('.standard').html(final_price)
+
+          let premium = $('.premium').html(); 
+          premium = parseInt(premium);
+          final_price = (premium-premium*0.2).toString()
+          final_price+="Rs"
+          $('.premium').html(final_price)
+          $('.coupon').hide()
+          }
+          else{
+            alert("Invalid Coupon")
+          }
+          
+        })
+        
+      })
+      
+    </script>
   </head>
   <body>
     <div class="nfHeader">
@@ -29,6 +70,10 @@
              <li class="" ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkmark-group--icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.68239 19.7312L23.6824 5.73115L22.3178 4.26904L8.02404 17.6098L2.70718 12.293L1.29297 13.7072L7.29297 19.7072C7.67401 20.0882 8.28845 20.0988 8.68239 19.7312Z" fill="currentColor"></path></svg><span class="checkmark-group--text" data-uia="checkmark-group+row-1+content">Recommendations just for you.</span></li>
              <li class="" ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkmark-group--icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.68239 19.7312L23.6824 5.73115L22.3178 4.26904L8.02404 17.6098L2.70718 12.293L1.29297 13.7072L7.29297 19.7072C7.67401 20.0882 8.28845 20.0988 8.68239 19.7312Z" fill="currentColor"></path></svg><span class="checkmark-group--text" data-uia="checkmark-group+row-2+content">Change or cancel your plan anytime.</span></li></ul>
          </div>
+         <div class="coupon">
+          <h3>Coupon </h3>
+          <input type="text" id="coupon_value" > <button class="coupon_button" style="background-color: red; color: white;border-radius: 10px; height: 40px;width: 100px;" >Submit</button>
+         </div>
          <div class="plainGrid">
            <div class="plainGrid_header">
              <div class="plainGrid_box">
@@ -49,16 +94,16 @@
                <td class="plainGrid_table_title">
                  Montly Prices
                </td>
-               <td class="plainGrid_table_value">
+               <td class="plainGrid_table_value mobile">
                  149 rs
                </td>
-               <td class="plainGrid_table_value">
+               <td class="plainGrid_table_value basic">
                  199 rs
                </td>
-               <td class="plainGrid_table_value">
+               <td class="plainGrid_table_value standard">
                  499 rs
                </td>
-               <td class="plainGrid_table_value">
+               <td class="plainGrid_table_value premium">
                  649 rs
                </td>
              </tr> 
